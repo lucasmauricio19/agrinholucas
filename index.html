@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Forte, Futuro Sustentável</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f7f2;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1400&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      max-width: 900px;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #1b5e20;
+      transform: scale(1.05);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #1b5e20;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    section h2 {
+      color: #1b5e20;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    section p {
+      margin-bottom: 20px;
+      text-align: justify;
+      font-size: 1.05rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 15px;
+      color: #2e7d32;
+    }
+
+    .banner {
+      background: linear-gradient(90deg, #2e7d32, #66bb6a);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .banner h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .links a {
+      background: white;
+      color: #1b5e20;
+      padding: 15px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #c8e6c9;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .topo {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #2e7d32;
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      display: none;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Agro Forte, Futuro Sustentável</h1>
+    <p>
+      O agronegócio é um dos pilares da economia e da alimentação mundial. Entretanto,
+      produzir mais não significa destruir o meio ambiente. O futuro depende de um equilíbrio
+      entre tecnologia, responsabilidade ambiental e desenvolvimento sustentável.
+    </p>
+
+    <a href="#sobre" class="btn">Explorar Conteúdo</a>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#desafios">Desafios</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#links">Links Úteis</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>O Agro e Sua Importância</h2>
+
+    <p>
+      O agronegócio possui papel fundamental no desenvolvimento econômico e social.
+      Além de gerar milhões de empregos, ele é responsável pela produção de alimentos,
+      fibras e matérias-primas utilizadas diariamente pela sociedade. O crescimento da
+      população mundial exige cada vez mais eficiência no campo, tornando essencial o uso
+      de práticas modernas e sustentáveis.
+    </p>
+
+    <p>
+      Durante décadas, o agro passou por grandes transformações. Máquinas modernas,
+      sistemas inteligentes e novas técnicas agrícolas permitiram aumentar a produtividade
+      sem depender exclusivamente da expansão das áreas de cultivo. Atualmente, a busca
+      por equilíbrio ambiental se tornou prioridade, promovendo um novo modelo de produção
+      baseado na preservação dos recursos naturais.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Produção Inteligente</h3>
+          <p>
+            O uso de tecnologia no campo permite produzir mais alimentos com menos desperdício,
+            aumentando a eficiência e reduzindo impactos ambientais.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Preservação Ambiental</h3>
+          <p>
+            O equilíbrio entre produção e preservação garante proteção da biodiversidade,
+            dos rios, do solo e das futuras gerações.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Economia Forte</h3>
+          <p>
+            O agronegócio fortalece a economia, impulsiona exportações e movimenta diversos
+            setores da indústria e do comércio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sustentabilidade">
+    <h2>Sustentabilidade no Campo</h2>
+
+    <p>
+      A sustentabilidade é um dos temas mais importantes da atualidade. No agronegócio,
+      ela representa a capacidade de produzir alimentos sem comprometer os recursos naturais.
+      Isso envolve práticas conscientes como redução do desperdício de água, preservação do solo,
+      reflorestamento e diminuição da emissão de poluentes.
+    </p>
+
+    <p>
+      Técnicas sustentáveis como rotação de culturas, integração lavoura-pecuária-floresta,
+      agricultura regenerativa e energia limpa estão transformando o setor agrícola.
+      Essas práticas melhoram a produtividade ao mesmo tempo em que reduzem impactos negativos
+      no meio ambiente.
+    </p>
+
+    <p>
+      Outro ponto importante é a educação ambiental. Produtores, empresas e consumidores
+      precisam compreender a importância do consumo consciente e da preservação ambiental.
+      Quando todos colaboram, é possível construir um futuro mais equilibrado e sustentável.
+    </p>
+  </section>
+
+  <div class="banner">
+    <h2>Produzir Hoje Pensando no Amanhã</h2>
+
+    <p>
+      A inovação sustentável no campo é essencial para garantir qualidade de vida,
+      segurança alimentar e preservação ambiental para as próximas gerações.
+    </p>
+  </div>
+
+  <section id="tecnologia">
+    <h2>Tecnologia e Inovação no Agro</h2>
+
+    <p>
+      A tecnologia revolucionou o agronegócio. Atualmente, drones, sensores inteligentes,
+      tratores automatizados e softwares de monitoramento ajudam produtores a tomar decisões
+      mais precisas e eficientes. Esse avanço reduz desperdícios e melhora a gestão da produção.
+    </p>
+
+    <p>
+      A agricultura de precisão é um exemplo dessa modernização. Com dados coletados em tempo real,
+      é possível identificar necessidades específicas de cada área da plantação, aplicando água,
+      fertilizantes e defensivos apenas onde realmente necessário.
+    </p>
+
+    <p>
+      Além disso, fontes de energia renovável como solar e biomassa estão sendo cada vez mais
+      utilizadas em propriedades rurais. Essas soluções ajudam a reduzir custos e diminuem os
+      impactos ambientais causados pela produção agrícola tradicional.
+    </p>
+  </section>
+
+  <section id="desafios">
+    <h2>Principais Desafios</h2>
+
+    <p>
+      Apesar dos avanços, o agronegócio enfrenta diversos desafios. Mudanças climáticas,
+      escassez de água, desmatamento irregular e aumento da demanda global por alimentos
+      exigem soluções rápidas e eficientes.
+    </p>
+
+    <p>
+      Outro desafio importante é equilibrar crescimento econômico e preservação ambiental.
+      Muitos produtores precisam adaptar métodos tradicionais para novas práticas sustentáveis,
+      o que pode exigir investimentos em infraestrutura e capacitação.
+    </p>
+
+    <p>
+      O combate ao desperdício também é essencial. Grande parte dos alimentos produzidos no mundo
+      ainda é perdida durante transporte, armazenamento e consumo. Melhorar a logística e investir
+      em conscientização são medidas fundamentais.
+    </p>
+  </section>
+
+  <section id="solucoes">
+    <h2>Soluções para um Futuro Sustentável</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Energia Renovável</h3>
+          <p>
+            A utilização de energia solar e biomassa reduz impactos ambientais e promove economia.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Proteção da Biodiversidade</h3>
+          <p>
+            Preservar florestas, rios e animais é essencial para manter o equilíbrio ecológico.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Educação Ambiental</h3>
+          <p>
+            Informar a população e incentivar práticas conscientes fortalece a sustentabilidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="links">
+    <h2>Links Úteis Sobre o Tema</h2>
+
+    <p>
+      Clique nos links abaixo para aprender ainda mais sobre sustentabilidade,
+      agronegócio e preservação ambiental.
+    </p>
+
+    <div class="links">
+      <a href="https://www.embrapa.br" target="_blank">EMBRAPA</a>
+      <a href="https://www.gov.br/agricultura" target="_blank">Ministério da Agricultura</a>
+      <a href="https://www.wwf.org.br" target="_blank">WWF Brasil</a>
+      <a href="https://www.greenpeace.org/brasil" target="_blank">Greenpeace Brasil</a>
+      <a href="https://www.ibama.gov.br" target="_blank">IBAMA</a>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Agro Forte, Futuro Sustentável</h3>
+    <p>
+      Produção responsável, inovação tecnológica e preservação ambiental caminhando juntas.
+    </p>
+    <p>© 2026 - Todos os direitos reservados.</p>
+  </footer>
+
+  <button class="topo" id="topoBtn">↑</button>
+
+  <script>
+    const topoBtn = document.getElementById('topoBtn');
+
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 300) {
+        topoBtn.style.display = 'block';
+      } else {
+        topoBtn.style.display = 'none';
+      }
+    });
+
+    topoBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0px)';
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    sections.forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(50px)';
+      section.style.transition = 'all 1s ease';
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
