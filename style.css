@@ -94,14 +94,14 @@ body {
 }
 
 .hero h1 {
-  font-size: 68px;
+  font-size: 58px;
   line-height: 1.1;
   text-shadow: 3px 5px 12px rgba(0, 0, 0, 0.8);
   margin-bottom: 25px;
 }
 
 .hero p {
-  font-size: 25px;
+  font-size: 22px;
   max-width: 850px;
   margin: auto;
   text-align: center;
@@ -182,7 +182,7 @@ body {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 36px;
   color: #21491f;
   text-align: center;
   margin-bottom: 25px;
@@ -195,7 +195,7 @@ h2 {
 }
 
 p {
-  font-size: 19px;
+  font-size: 18px;
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -248,7 +248,7 @@ p {
 
 .card-imagem p {
   color: #243b1d;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   margin: 14px 5px 5px;
   line-height: 1.5;
@@ -294,7 +294,7 @@ footer p {
 
   .texto-video h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .grade-imagens {
