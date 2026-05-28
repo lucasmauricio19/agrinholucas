@@ -313,3 +313,29 @@ footer p {
     font-size: 17px;
   }
 }
+.topo-sustentabilidade {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(8, 45, 18, 0.50), rgba(8, 45, 18, 0.72)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.verde-sustentavel {
+  background: linear-gradient(135deg, #1f4d27, #5f8f3d);
+  color: #fff8dc;
+}
+
+.verde-sustentavel h2 {
+  color: #f1d27a;
+}
+
+.final-sustentabilidade {
+  background: linear-gradient(135deg, #102b14, #284d1f);
+  color: #fff8dc;
+}
+
+.final-sustentabilidade h2 {
+  color: #f1d27a;
+}
