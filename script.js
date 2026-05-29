@@ -9,7 +9,17 @@ imagens.forEach((imagem) => {
 const topoBtn = document.getElementById("topoBtn");
 
 if (topoBtn) {
-  topoBtn.addEventListener("click", function () {
+  topoBtn.addEventListener("click", () => {
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    document.body.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
     window.scrollTo({
       top: 0,
       behavior: "smooth"
