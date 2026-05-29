@@ -391,20 +391,20 @@ footer p {
   background-position: center;
 }
 
-/* ÁREA DO VÍDEO */
+/* ÁREA DO VÍDEO/CARD */
 
 .video-tecnologia {
-  padding: 70px 8%;
+  padding: 80px 8%;
   background: linear-gradient(135deg, #f8f4df, #e6d7aa);
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 42px;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
   align-items: center;
 }
 
 .video-card-link {
   width: 100%;
-  max-width: 620px;
+  max-width: 580px;
   justify-self: center;
   background: #fff8dc;
   border-radius: 30px;
@@ -414,9 +414,9 @@ footer p {
 }
 
 .video-capa {
-  min-height: 320px;
+  height: 300px;
   background:
-    linear-gradient(rgba(10, 35, 15, 0.25), rgba(10, 35, 15, 0.65)),
+    linear-gradient(rgba(10, 35, 15, 0.20), rgba(10, 35, 15, 0.65)),
     url("https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1200&auto=format&fit=crop");
   background-size: cover;
   background-position: center;
@@ -475,8 +475,10 @@ footer p {
   transform: translateY(-4px);
 }
 
+/* TEXTO AO LADO */
+
 .texto-video-tecnologia {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.82);
   padding: 38px;
   border-radius: 28px;
   border-left: 10px solid #387529;
@@ -497,80 +499,7 @@ footer p {
   text-align: justify;
 }
 
-@media (max-width: 950px) {
-  .video-tecnologia {
-    grid-template-columns: 1fr;
-    padding: 55px 6%;
-  }
-
-  .video-card-link {
-    max-width: 100%;
-  }
-
-  .texto-video-tecnologia h2 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 550px) {
-  .video-capa {
-    min-height: 220px;
-  }
-
-  .play-video {
-    width: 65px;
-    height: 65px;
-    font-size: 28px;
-  }
-
-  .texto-video-tecnologia {
-    padding: 28px;
-  }
-}
-
-/* deixa o vídeo menor e mais bonito */
-.video-menor,
-.video-alternativo {
-  width: 100%;
-  max-width: 620px;
-  aspect-ratio: 16 / 9;
-  border-radius: 28px;
-  overflow: hidden;
-  border: 8px solid #fff8dc;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
-  background: #123816;
-  justify-self: center;
-}
-
-.video-menor iframe,
-.video-alternativo iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* texto ao lado do vídeo */
-.texto-video-tecnologia {
-  background: rgba(255, 255, 255, 0.78);
-  padding: 38px;
-  border-radius: 28px;
-  border-left: 10px solid #387529;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
-}
-
-.texto-video-tecnologia h2 {
-  text-align: left;
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #1f4d1e;
-}
-
-.texto-video-tecnologia p {
-  font-size: 17px;
-  line-height: 1.8;
-  color: #263b22;
-  text-align: justify;
-}
+/* SEÇÕES VERDES */
 
 .verde-tecnologia {
   background: linear-gradient(135deg, #1f4d27, #5f8f3d);
@@ -597,6 +526,8 @@ footer p {
 .final-tecnologia p {
   color: #fff8dc;
 }
+
+/* LISTA DE TECNOLOGIAS */
 
 .lista-tecnologia {
   margin-top: 35px;
@@ -648,6 +579,8 @@ footer p {
 .tecnologia-util div:hover p {
   color: #123816;
 }
+
+/* IMPLEMENTAÇÃO */
 
 .implementacao-tecnologia {
   background: linear-gradient(135deg, #f8f4df, #efe4bd);
@@ -701,6 +634,8 @@ footer p {
   line-height: 1.6;
 }
 
+/* BENEFÍCIOS */
+
 .tecnologia-extra {
   background: #f4f1e4;
 }
@@ -738,6 +673,8 @@ footer p {
   text-align: left;
   line-height: 1.6;
 }
+
+/* BOTÕES */
 
 .botao-saiba {
   display: inline-block;
@@ -785,8 +722,7 @@ footer p {
     padding: 55px 6%;
   }
 
-  .video-menor,
-  .video-alternativo {
+  .video-card-link {
     max-width: 100%;
   }
 
@@ -803,6 +739,20 @@ footer p {
 }
 
 @media (max-width: 550px) {
+  .video-capa {
+    height: 220px;
+  }
+
+  .play-video {
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+  }
+
+  .texto-video-tecnologia {
+    padding: 28px;
+  }
+
   .lista-tecnologia,
   .passos-grid,
   .tecnologia-util,
