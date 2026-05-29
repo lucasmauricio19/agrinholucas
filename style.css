@@ -385,10 +385,19 @@ footer p {
 .topo-tecnologia {
   min-height: 100vh;
   background:
-    linear-gradient(rgba(8, 45, 18, 0.50), rgba(8, 45, 18, 0.75)),
-    url("https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?q=80&w=1600&auto=format&fit=crop");
+    linear-gradient(rgba(8, 45, 18, 0.45), rgba(8, 45, 18, 0.78)),
+    url("https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1600&auto=format&fit=crop");
   background-size: cover;
   background-position: center;
+}
+
+.video-tecnologia {
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #f8f4df, #e6d7aa);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 45px;
+  align-items: center;
 }
 
 .verde-tecnologia {
@@ -400,6 +409,10 @@ footer p {
   color: #f1d27a;
 }
 
+.verde-tecnologia p {
+  color: #fff8dc;
+}
+
 .final-tecnologia {
   background: linear-gradient(135deg, #102b14, #284d1f);
   color: #fff8dc;
@@ -407,6 +420,10 @@ footer p {
 
 .final-tecnologia h2 {
   color: #f1d27a;
+}
+
+.final-tecnologia p {
+  color: #fff8dc;
 }
 
 .lista-tecnologia {
@@ -431,6 +448,44 @@ footer p {
   transform: translateY(-6px);
   background: #e1b64b;
   color: #123816;
+}
+
+.tecnologia-extra {
+  background: #f4f1e4;
+}
+
+.beneficios-grid {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.beneficio-card {
+  background: #fff8dc;
+  padding: 28px;
+  border-radius: 26px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+  border-bottom: 6px solid #7ac943;
+  transition: 0.3s;
+}
+
+.beneficio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
+}
+
+.beneficio-card h3 {
+  color: #21491f;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.beneficio-card p {
+  color: #243b1d;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.6;
 }
 
 .botao-saiba {
@@ -474,13 +529,23 @@ footer p {
 /* RESPONSIVO TECNOLOGIA */
 
 @media (max-width: 950px) {
+  .video-tecnologia {
+    grid-template-columns: 1fr;
+    padding: 55px 6%;
+  }
+
   .lista-tecnologia {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beneficios-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 550px) {
-  .lista-tecnologia {
+  .lista-tecnologia,
+  .beneficios-grid {
     grid-template-columns: 1fr;
   }
 }
