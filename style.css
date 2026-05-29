@@ -391,23 +391,59 @@ footer p {
   background-position: center;
 }
 
+/* ÁREA DO VÍDEO */
+
 .video-tecnologia {
-  padding: 80px 8%;
+  padding: 70px 8%;
   background: linear-gradient(135deg, #f8f4df, #e6d7aa);
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 45px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 42px;
   align-items: center;
 }
 
+/* deixa o vídeo menor e mais bonito */
+.video-menor,
 .video-alternativo {
+  width: 100%;
+  max-width: 620px;
+  aspect-ratio: 16 / 9;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 8px solid #fff8dc;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
   background: #123816;
+  justify-self: center;
 }
 
+.video-menor iframe,
 .video-alternativo iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* texto ao lado do vídeo */
+.texto-video-tecnologia {
+  background: rgba(255, 255, 255, 0.78);
+  padding: 38px;
+  border-radius: 28px;
+  border-left: 10px solid #387529;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+.texto-video-tecnologia h2 {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1f4d1e;
+}
+
+.texto-video-tecnologia p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #263b22;
+  text-align: justify;
 }
 
 .verde-tecnologia {
@@ -621,6 +657,15 @@ footer p {
   .video-tecnologia {
     grid-template-columns: 1fr;
     padding: 55px 6%;
+  }
+
+  .video-menor,
+  .video-alternativo {
+    max-width: 100%;
+  }
+
+  .texto-video-tecnologia h2 {
+    text-align: center;
   }
 
   .lista-tecnologia,
