@@ -83,6 +83,28 @@ body {
   background-position: center;
 }
 
+/* TOPO DE SOLUÇÕES */
+
+.topo-solucoes {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(18, 40, 18, 0.55), rgba(18, 40, 18, 0.75)),
+    url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+/* TOPO DA TECNOLOGIA */
+
+.topo-tecnologia {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(8, 45, 18, 0.45), rgba(8, 45, 18, 0.78)),
+    url("https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
 /* HERO */
 
 .hero {
@@ -151,6 +173,63 @@ body {
   border: none;
 }
 
+/* VÍDEO DA PÁGINA TECNOLOGIA */
+
+.video-tecnologia {
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #f8f4df, #e6d7aa);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.video-player-card {
+  width: 100%;
+  max-width: 580px;
+  justify-self: center;
+  background: #fff8dc;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 8px solid #fff8dc;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+}
+
+.video-moldura-tecnologia {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #123816;
+  overflow: hidden;
+}
+
+.video-moldura-tecnologia iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.video-info {
+  padding: 26px 28px 28px;
+  text-align: center;
+}
+
+.video-info h3 {
+  font-size: 25px;
+  color: #21491f;
+  margin-bottom: 12px;
+}
+
+.video-info p {
+  font-size: 16px;
+  color: #243b1d;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* TEXTO AO LADO DO VÍDEO */
+
 .texto-video {
   background: rgba(255, 255, 255, 0.72);
   padding: 40px;
@@ -168,6 +247,28 @@ body {
 
 .texto-video p {
   font-size: 18px;
+}
+
+.texto-video-tecnologia {
+  background: rgba(255, 255, 255, 0.82);
+  padding: 38px;
+  border-radius: 28px;
+  border-left: 10px solid #387529;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+.texto-video-tecnologia h2 {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1f4d1e;
+}
+
+.texto-video-tecnologia p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #263b22;
+  text-align: justify;
 }
 
 .creditos {
@@ -213,7 +314,11 @@ h2 {
 .verde h2,
 .final h2,
 .verde-sustentavel h2,
-.final-sustentabilidade h2 {
+.final-sustentabilidade h2,
+.verde-solucoes h2,
+.final-solucoes h2,
+.verde-tecnologia h2,
+.final-tecnologia h2 {
   color: #f1d27a;
 }
 
@@ -223,7 +328,7 @@ p {
   text-align: justify;
 }
 
-/* IMAGENS BONITAS */
+/* IMAGENS */
 
 .imagem-destaque {
   margin-top: 38px;
@@ -292,84 +397,11 @@ p {
   color: #fff8dc;
 }
 
-/* RODAPÉ */
-
-footer {
-  background: #071c0b;
-  color: #fff8dc;
-  text-align: center;
-  padding: 28px 7%;
-}
-
-footer p {
-  margin: 0;
-  text-align: center;
-  font-size: 16px;
-}
-
-/* CELULAR */
-
-@media (max-width: 950px) {
-  .menu {
-    position: static;
-    flex-direction: column;
-    padding: 18px 5%;
-  }
-
-  .hero {
-    padding-top: 70px;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero p {
-    font-size: 19px;
-  }
-
-  .video-inicio {
-    grid-template-columns: 1fr;
-    padding: 55px 6%;
-  }
-
-  .texto-video h2 {
-    text-align: center;
-    font-size: 28px;
-  }
-
-  .grade-imagens {
-    grid-template-columns: 1fr;
-  }
-
-  .imagem-destaque img {
-    height: 310px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-}
-.topo-solucoes {
-  min-height: 100vh;
-  background:
-    linear-gradient(rgba(18, 40, 18, 0.55), rgba(18, 40, 18, 0.75)),
-    url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1600&auto=format&fit=crop");
-  background-size: cover;
-  background-position: center;
-}
+/* SOLUÇÕES */
 
 .verde-solucoes {
   background: linear-gradient(135deg, #204d2d, #5d8f44);
   color: #fff8dc;
-}
-
-.verde-solucoes h2 {
-  color: #f1d27a;
 }
 
 .final-solucoes {
@@ -377,137 +409,11 @@ footer p {
   color: #fff8dc;
 }
 
-.final-solucoes h2 {
-  color: #f1d27a;
-}
 /* TECNOLOGIA */
-
-.topo-tecnologia {
-  min-height: 100vh;
-  background:
-    linear-gradient(rgba(8, 45, 18, 0.45), rgba(8, 45, 18, 0.78)),
-    url("https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1600&auto=format&fit=crop");
-  background-size: cover;
-  background-position: center;
-}
-
-/* ÁREA DO VÍDEO/CARD */
-
-.video-tecnologia {
-  padding: 80px 8%;
-  background: linear-gradient(135deg, #f8f4df, #e6d7aa);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 45px;
-  align-items: center;
-}
-
-.video-card-link {
-  width: 100%;
-  max-width: 580px;
-  justify-self: center;
-  background: #fff8dc;
-  border-radius: 30px;
-  overflow: hidden;
-  border: 8px solid #fff8dc;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
-}
-
-.video-capa {
-  height: 300px;
-  background:
-    linear-gradient(rgba(10, 35, 15, 0.20), rgba(10, 35, 15, 0.65)),
-    url("https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1200&auto=format&fit=crop");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.play-video {
-  width: 82px;
-  height: 82px;
-  background: #e1b64b;
-  color: #123816;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 34px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  padding-left: 5px;
-}
-
-.video-info {
-  padding: 28px;
-  text-align: center;
-}
-
-.video-info h3 {
-  font-size: 25px;
-  color: #21491f;
-  margin-bottom: 12px;
-}
-
-.video-info p {
-  font-size: 16px;
-  color: #243b1d;
-  text-align: center;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.botao-video {
-  display: inline-block;
-  background: #e1b64b;
-  color: #123816;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.botao-video:hover {
-  background: #123816;
-  color: #fff8dc;
-  transform: translateY(-4px);
-}
-
-/* TEXTO AO LADO */
-
-.texto-video-tecnologia {
-  background: rgba(255, 255, 255, 0.82);
-  padding: 38px;
-  border-radius: 28px;
-  border-left: 10px solid #387529;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
-}
-
-.texto-video-tecnologia h2 {
-  text-align: left;
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #1f4d1e;
-}
-
-.texto-video-tecnologia p {
-  font-size: 17px;
-  line-height: 1.8;
-  color: #263b22;
-  text-align: justify;
-}
-
-/* SEÇÕES VERDES */
 
 .verde-tecnologia {
   background: linear-gradient(135deg, #1f4d27, #5f8f3d);
   color: #fff8dc;
-}
-
-.verde-tecnologia h2 {
-  color: #f1d27a;
 }
 
 .verde-tecnologia p {
@@ -517,10 +423,6 @@ footer p {
 .final-tecnologia {
   background: linear-gradient(135deg, #102b14, #284d1f);
   color: #fff8dc;
-}
-
-.final-tecnologia h2 {
-  color: #f1d27a;
 }
 
 .final-tecnologia p {
@@ -714,20 +616,64 @@ footer p {
   background: #fff8dc;
 }
 
-/* RESPONSIVO TECNOLOGIA */
+/* RODAPÉ */
+
+footer {
+  background: #071c0b;
+  color: #fff8dc;
+  text-align: center;
+  padding: 28px 7%;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* RESPONSIVO */
 
 @media (max-width: 950px) {
+  .menu {
+    position: static;
+    flex-direction: column;
+    padding: 18px 5%;
+  }
+
+  .hero {
+    padding-top: 70px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 19px;
+  }
+
+  .video-inicio,
   .video-tecnologia {
     grid-template-columns: 1fr;
     padding: 55px 6%;
   }
 
-  .video-card-link {
+  .video-player-card {
     max-width: 100%;
   }
 
+  .texto-video h2,
   .texto-video-tecnologia h2 {
     text-align: center;
+    font-size: 28px;
+  }
+
+  .grade-imagens {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem-destaque img {
+    height: 310px;
   }
 
   .lista-tecnologia,
@@ -736,19 +682,18 @@ footer p {
   .beneficios-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 550px) {
-  .video-capa {
-    height: 220px;
-  }
-
-  .play-video {
-    width: 65px;
-    height: 65px;
-    font-size: 28px;
-  }
-
+  .texto-video,
   .texto-video-tecnologia {
     padding: 28px;
   }
