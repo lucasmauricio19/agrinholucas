@@ -400,6 +400,16 @@ footer p {
   align-items: center;
 }
 
+.video-alternativo {
+  background: #123816;
+}
+
+.video-alternativo iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .verde-tecnologia {
   background: linear-gradient(135deg, #1f4d27, #5f8f3d);
   color: #fff8dc;
@@ -448,6 +458,85 @@ footer p {
   transform: translateY(-6px);
   background: #e1b64b;
   color: #123816;
+}
+
+.tecnologia-util {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tecnologia-util div {
+  text-align: left;
+}
+
+.tecnologia-util h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+  color: #21491f;
+}
+
+.tecnologia-util p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #243b1d;
+  text-align: left;
+  margin: 0;
+}
+
+.tecnologia-util div:hover h3,
+.tecnologia-util div:hover p {
+  color: #123816;
+}
+
+.implementacao-tecnologia {
+  background: linear-gradient(135deg, #f8f4df, #efe4bd);
+}
+
+.passos-grid {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.passo-card {
+  background: #fff8dc;
+  padding: 28px;
+  border-radius: 26px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+  border-top: 6px solid #7ac943;
+  transition: 0.3s;
+}
+
+.passo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
+}
+
+.passo-card span {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  background: #e1b64b;
+  color: #123816;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.passo-card h3 {
+  color: #21491f;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.passo-card p {
+  color: #243b1d;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.6;
 }
 
 .tecnologia-extra {
@@ -534,10 +623,9 @@ footer p {
     padding: 55px 6%;
   }
 
-  .lista-tecnologia {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+  .lista-tecnologia,
+  .passos-grid,
+  .tecnologia-util,
   .beneficios-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -545,6 +633,8 @@ footer p {
 
 @media (max-width: 550px) {
   .lista-tecnologia,
+  .passos-grid,
+  .tecnologia-util,
   .beneficios-grid {
     grid-template-columns: 1fr;
   }
